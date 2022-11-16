@@ -1,0 +1,81 @@
+.HomeF{
+    background-image: url("../img/fondoHome.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow: scroll;   
+}
+
+
+.Tittle{
+    font-family: "Staatliches";
+    text-align: center;
+    position: relative;
+    letter-spacing: 15px;
+    font-size: 4.2rem;
+    color: #ffffff;
+    margin-top: 0%;
+    text-shadow: 2px 2px 15px rgb(255, 0, 0);
+}
+
+.BtnCreate{
+    padding: 0.9em 2.5em;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: rgb(165, 50, 50);
+    background-color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    outline:auto;
+    font-family: "Red Hat Display", sans-serif;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.ReloadVideo{
+    padding: 0.9em 2.5em;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(165, 50, 50);
+    background-color: #fff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    outline:auto;
+    margin-top: 0.9em;
+    font-family: "Red Hat Display", sans-serif;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.Selector{
+    margin-left: 15px;
+    margin-right: 15px;
+    align-items: center;
+    border: 0;
+    font: "Red Hat Display";
+    color: rgb(0, 0, 0);
+    width: 87px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: #e7edf088;
+    box-shadow: 1px 1px 18px rgb(165, 50, 50);
+    margin-bottom: 10px;
+}
+
+.Card1{
+    display: grid;
+    grid-gap: 1rem 3.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));
+    margin-right: 20px;
+    justify-items: center;
+}

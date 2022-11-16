@@ -1,0 +1,39 @@
+.ContenedorSearchBar {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    align-items: baseline;
+}
+  
+.InputSearchBar {
+    height: 25px;
+    width: 250px;
+    margin-right: 8px;
+    border-radius: 5px;
+    border-color: rgb(165, 50, 50);
+    background-color: rgba(255, 255, 255, 0.945);
+    font-size: 18px;
+    font-family: "Red Hat Display", sans-serif;
+    box-shadow: 1px 1px 18px rgb(165, 50, 50);
+}
+
+.butSearch {
+    cursor: pointer;
+    background: #FBCA1F;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+}
+   
+.butSearch:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+}
+   
+.butSearch:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+}

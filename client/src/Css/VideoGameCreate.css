@@ -1,0 +1,209 @@
+.Fondo-Form {
+    background-image: url("../img/fondoHome.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    overflow: scroll;
+  }
+
+  .goBack,
+  .goBack::after {
+    margin-top: 5 px;
+   padding: 16px 20px;
+   font-size: 18px;
+   background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+   border: 0;
+   color: #fff;
+   letter-spacing: 3px;
+   line-height: 1;
+   box-shadow: 6px 0px 0px #ffffff;
+   outline: transparent;
+   position: relative;
+  }
+  
+  .goBack::after {
+   --slice-0: inset(50% 50% 50% 50%);
+   --slice-1: inset(80% -6px 0 0);
+   --slice-2: inset(50% -6px 30% 0);
+   --slice-3: inset(10% -6px 85% 0);
+   --slice-4: inset(40% -6px 43% 0);
+   --slice-5: inset(80% -6px 5% 0);
+   content: "HOVER ME";
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
+   text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+   clip-path: var(--slice-0);
+  }
+  
+  .goBack:hover::after {
+   animation: 1s glitch;
+   animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+   0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+   }
+  
+   10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+   }
+  
+   20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+   }
+  
+   30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+   }
+  
+   40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+   }
+  
+   50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+   }
+  
+   60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+   }
+  
+   70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+   }
+  
+   80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+   }
+  
+   90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+   }
+  
+   100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+   }
+  }
+  
+.CreateGame{
+    font-family: "Staatliches";
+    text-align: center;
+    position: relative;
+    letter-spacing: 8px;
+    font-size: 3rem;
+    color: #ffffff;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-shadow: 2px 2px 15px rgb(235, 9, 9);
+}
+.Contenedor-Form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 18px rgb(165, 50, 50);
+    
+  }
+  .input {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    box-shadow: 10px 10px 30px #c5c5c5,
+       -10px -10px -30px #ffffff;
+    transition: 0.3s;
+    height: 22px;
+    width: 250px;
+   }
+   
+   .input:focus {
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+       inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+   }
+
+   .divCreate{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 15px;
+   }
+ 
+
+.DivCreateGame{
+  margin-top: 50px;
+}
+
+.buttonC {
+  cursor: pointer;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  transition: all .3s;
+  box-shadow: 6px 6px 12px #8b0000,
+              -6px -6px 12px #ffffff;
+ }
+ 
+.buttonC:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5,
+              inset -4px -4px 12px #ffffff;
+ }
+
+.btn-create {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-create:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.btn-create:active {
+  transform: translateY(-1px);
+}
